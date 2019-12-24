@@ -1,0 +1,9 @@
+all: Project1
+
+printf01: Project1.o
+        gcc -o Project1 Project1.o
+printf01.o: Project1.s
+        as -o Project1.o Project1.s
+
+clean:
+        rm -rf Project1
